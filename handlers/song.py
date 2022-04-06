@@ -1,4 +1,4 @@
-# Telegramda yani ben boş işler müdürü :) <> @Mahoaga Tarafından düzenlenen ufak çaplı proje. 
+# Telegramda Bot Kurucularından biri yani ben :) <> @XTQ_BAKAVOY Tarafından düzenlenen ufak çaplı proje. 
 import os
 import requests
 import aiohttp
