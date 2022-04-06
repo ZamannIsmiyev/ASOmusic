@@ -1,7 +1,7 @@
 pyrogram
 py-tgcalls==0.8.5 
 TgCrypto
-git+https://github.com/Sorrybabe/downloader
+git+https://github.com/XTQ067/downloader
 python-dotenv
 youtube_dl
 youtube_search_python 
