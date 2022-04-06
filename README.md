@@ -1,8 +1,8 @@
-<h2 align="centre">Telegram Sohbet Mp3 Oynatıcı 🎵</h2>
+<h2 align="YARASA MUSİC BOT">Telegram Sohbet Mp3 Oynatıcı 🎵</h2>
 
 ### Güncellendi aktif.... 😇
 <p align="center">
-  <img src="https://telegra.ph/file/a4fa687ed647cfef52402.jpg">
+  <img src="https://te.legra.ph/file/b79c36f7da02a8ed2b11f.jpg">
 </p> 
 
 <h3>Sürümler 📮</h3>
