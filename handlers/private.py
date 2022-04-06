@@ -3,26 +3,26 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, 
 
 from config import BOT_USERNAME, BOT_NAME as bot
 from helpers.filters import command, other_filters2
-# EfsaneMusicVaves tarafından düzenlendi. 
+# YarasaMusic tarafından düzenlendi. 
 
 @Client.on_message(command(["start", f"start@{BOT_USERNAME}"]))
 async def start(_, message: Message):
                 await message.reply_photo(
-                "https://i.ibb.co/khRz42f/Turkish-Voice.jpg",
-                caption=(f"""**Merhaba {message.from_user.mention} 🎵\nBen {bot}!\nSesli sohbetlerde müzik çalabilen botum. Ban yetkisiz, Ses yönetimi yetkisi verip, Asistanı gruba ekleyiniz.\n\nDüzen Tasarım [Talia Müzik 🎙️](https://t.me/Sohbetdestek).**"""),
+                "https://te.legra.ph/file/b79c36f7da02a8ed2b11f.jpg",
+                caption=(f"""**Merhaba {message.from_user.mention} 🎵\nBen {bot}!\nSesli sohbetlerde müzik çalabilen botum. Ban yetkisiz, Ses yönetimi yetkisi verip, Asistanı gruba ekleyiniz.\n\nDüzen Tasarım [Yarasa Music 🎙️](https://t.me/YarasaMMC).**"""),
          reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ Grubuna Ekle ❱ ➕", url=f"https://t.me/Efsanestar_bot?startgroup=true"
+                        "➕ ❰ Grubuna Ekle ❱ ➕", url=f"https://t.me/YarasaMusicbot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔊 Asistan", url="https://t.me/Taliamusicasistant"
+                        "👨‍🔧Support", url="https://t.me/BotssSupport"
                     ),
                     InlineKeyboardButton(
-                        "💬 Sohbet", url="https://t.me/Sohbetskyfall"
+                        "💬 Sohbet", url="https://t.me/The_Yildiz_Group"
                     )
                 ],
                 [
@@ -30,7 +30,7 @@ async def start(_, message: Message):
                         "🧩 Komutlar" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "Resmi Kanal 🇹🇷", url=f"https://t.me/Sohbetdestek"
+                        "Resmi Kanal 🇹🇷", url=f"https://t.me/YarasaMMC"
                     )
                 ]
                 
@@ -56,7 +56,7 @@ async def bilgi(_, message: Message):
                          "Ana menü🏠", callback_data="cbstart")
                  ],[
                      InlineKeyboardButton(
-                         "⚙ Geliştirici", url="https://t.me/Mahoaga")
+                         "⚙ Geliştirici", url="https://t.me/XTQ_BAKAVOY")
                  ]
              ]
          )
@@ -82,7 +82,7 @@ async def cbbilgi(_, query: CallbackQuery):
         ],
         [
           InlineKeyboardButton(
-            "⚙ Geliştirici", url="https://t.me/Mahoaga")
+            "⚙ Geliştirici", url="https://t.me/XTQ_BAKAVOY")
         ]
       ]
      ))
@@ -95,7 +95,7 @@ async def herkes(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "⚙ Geliştirici", url="https://t.me/Mahoaga")
+                         "⚙ Geliştirici", url="https://t.me/XTQ_BAKAVOY")
                  ],
                  [
                      InlineKeyboardButton(
@@ -113,7 +113,7 @@ async def admin(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "⚙ Geliştirici", url="https://t.me/Mahoaga")
+                         "⚙ Geliştirici", url="https://t.me/XTQ_BAKAVOY")
                  ],
                  [
                      InlineKeyboardButton(
@@ -126,20 +126,20 @@ async def admin(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
-    await query.edit_message_text(f"""**Merhaba {query.from_user.mention} 🎵\nBen {bot}!\nSesli sohbetlerde müzik çalabilen botum. Ban yetkisiz, Ses yönetimi yetkisi verip, Asistanı gruba ekleyiniz.\n\nDüzen Tasarım [Talia Müzik 🎙️](https://t.me/Sohbetdestek).**""",
+    await query.edit_message_text(f"""**Merhaba {query.from_user.mention} 🎵\nBen {bot}!\nSesli sohbetlerde müzik çalabilen botum. Ban yetkisiz, Ses yönetimi yetkisi verip, Asistanı gruba ekleyiniz.\n\nDüzen Tasarım [Yarasa Music 🎙️](https://t.me/YarasaMMC).**""",
          reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ Grubuna Ekle ❱ ➕", url=f"https://t.me/Efsanestar_bot?startgroup=true"
+                        "➕ ❰ Grubuna Ekle ❱ ➕", url=f"https://t.me/Yarasamusicbot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔊 Asistan", url="https://t.me/Taliamusicasistant"
+                        "👨‍🔧 Support", url="https://t.me/BotssSupport"
                     ),
                     InlineKeyboardButton(
-                        "💬 Sohbet", url="https://t.me/Sohbetskyfall"
+                        "💬 Sohbet", url="https://t.me/The_Yildiz_Group"
                     )
                 ],
                 [
@@ -147,7 +147,7 @@ async def cbstart(_, query: CallbackQuery):
                         "🌀 Komutlar" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "Resmi Kanal 🇹🇷", url=f"https://t.me/Sohbetdestek"
+                        "Resmi Kanal 🇹🇷", url=f"https://t.me/YarasaMMC"
                     )
                 ]
                 
