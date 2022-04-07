@@ -9,12 +9,12 @@ from helpers.filters import command, other_filters2
 async def start(_, message: Message):
                 await message.reply_photo(
                 "https://te.legra.ph/file/b79c36f7da02a8ed2b11f.jpg",
-                caption=(f"""**Merhaba {message.from_user.mention} 🎵\nBen {bot}!\nSesli sohbetlerde müzik çalabilen botum. Ban yetkisiz, Ses yönetimi yetkisi verip, Asistanı gruba ekleyiniz.\n\nDüzen Tasarım [Yarasa Music 🎙️](https://t.me/YarasaMMC).**"""),
+                caption=(f"""**Merhaba {message.from_user.mention} 🎵\nBen {bot}!\nSesli sohbetlerde müzik çalabilen botum. Ban yetkisiz, Ses yönetimi yetkisi verip, Asistanı gruba ekleyiniz.\n\nDüzen Tasarım [İmperator Music 🎙️](https://t.me/YarasaMMC).**"""),
          reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ Grubuna Ekle ❱ ➕", url=f"https://t.me/YarasaMusicbot?startgroup=true"
+                        "➕ ❰ Grubuna Ekle ❱ ➕", url=f"https://t.me/İmperatorMusicbot?startgroup=true"
                     )
                 ],
                 [
@@ -22,7 +22,7 @@ async def start(_, message: Message):
                         "👨‍🔧Support", url="https://t.me/BotssSupport"
                     ),
                     InlineKeyboardButton(
-                        "💬 Sohbet", url="https://t.me/The_Yildiz_Group"
+                        "💬 Sohbet", url="https://t.me/iMPERATORGRUP"
                     )
                 ],
                 [
@@ -131,7 +131,7 @@ async def cbstart(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ Grubuna Ekle ❱ ➕", url=f"https://t.me/Yarasamusicbot?startgroup=true"
+                        "➕ ❰ Grubuna Ekle ❱ ➕", url=f"https://t.me/İmperatormusicbot?startgroup=true"
                     )
                 ],
                 [
@@ -139,7 +139,7 @@ async def cbstart(_, query: CallbackQuery):
                         "👨‍🔧 Support", url="https://t.me/BotssSupport"
                     ),
                     InlineKeyboardButton(
-                        "💬 Sohbet", url="https://t.me/The_Yildiz_Group"
+                        "💬 Sohbet", url="https://t.me/iMPERATORGRUP"
                     )
                 ],
                 [
