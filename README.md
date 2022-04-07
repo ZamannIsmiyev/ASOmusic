@@ -1,4 +1,4 @@
-<h2 align="YARASA MUSİC BOT">Telegram Sohbet Mp3 Oynatıcı 🎵</h2>
+<h2 align="İMPERATOR MUSİC BOT">Telegram Sohbet Mp3 Oynatıcı 🎵</h2>
 
 ### Güncellendi aktif.... 😇
 <p align="center">
