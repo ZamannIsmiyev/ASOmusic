@@ -109,7 +109,7 @@ async def play(_, message: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "YarasaMusic"
+        user.first_name = "ASOMusic"
     usar = user
     wew = usar.id
     try:
@@ -121,19 +121,19 @@ async def play(_, message: Message):
                     invitelink = await _.export_chat_invite_link(chid)
                 except:
                     await lel.edit(
-                        "<b>Önce beni Grubunun yöneticisi olarak ekle!</b>")
+                        "<b>Öncə Meni Grubunun yöneticisi Et!</b>")
                     return
 
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "**Merhaba Asistan bu gruba müzik çalmak için katıldı**")
+                        message.chat.id, "**Salam Asistant bu gruba mahnı Oxumaq Üçün qatıldı**")
 
                 except UserAlreadyParticipant:
                     pass
                 except Exception:
                     await lel.edit(
-                        f"<b>🔵 Taşan Bekleme Hatası 🔵</b> \n\Merhaba {user.first_name}, yardımcı userbot, yoğun katılma istekleri nedeniyle grubunuza katılamadı. Userbot'un grupta yasaklı olmadığından emin olun ve daha sonra yeniden deneyin!")
+                        f"<b>🔵  Gözləmə Xətası 🔵</b> \n\Salam {user.first_name}, köməkçi userbot, tez tez qatılma istekleri nedeniyle grubunuza qatılamadı. Userbot'un grupta yasaklı olmadığından emin olun ve daha sonra yeniden deneyin!")
     try:
         await USER.get_chat(chid)
     except:
@@ -198,8 +198,8 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("📚 Bilgi", url=f"https://t.me/Yarasamusicbot"),
-                InlineKeyboardButton(" Kanal", url=f"https://t.me/YarasaMMC"),
+                InlineKeyboardButton("📚 Məlumat", url=f"https://t.me/ASOmusicbot"),
+                InlineKeyboardButton(" ASO Rəsmi", url=f"https://t.me/ASOresmi"),
             ],[
                 InlineKeyboardButton("✨ Kapat", callback_data="cls"),
             ],
@@ -214,7 +214,7 @@ async def play(_, message: Message):
                     [
                         [
                             InlineKeyboardButton(
-                                text="İzlemek için 🎬",
+                                text="İzlemek üçün 🎬",
                                 url=f"https://youtube.com")
 
                         ]
@@ -228,11 +228,11 @@ async def play(_, message: Message):
         file_path = await converter.convert(youtube.download(url))
     else:
         if len(message.command) < 2:
-            return await lel.edit("🤔 **Dinlemek istediğin şarkı nedir?**")
+            return await lel.edit("🤔 **Eşitmək istediyin musiqi hansıdır?**")
         await lel.edit("🔎 **Lütfen bekleyiniz...**")
         query = message.text.split(None, 1)[1]
         # print(query)
-        await lel.edit("🔄 **Ses İşleniyor..🔥**")
+        await lel.edit("🔄 **Ses qoşulur..🔥**")
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
             url = f"https://youtube.com{results[0]['url_suffix']}"
@@ -263,8 +263,8 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("📚 Bilgi", url=f"https://t.me/YarasaMusicbot"),
-                InlineKeyboardButton("📮 Kanal", url=f"https://t.me/YarasaMMC"),
+                InlineKeyboardButton("📚 Məlumat", url=f"https://t.me/ASOmusicbot"),
+                InlineKeyboardButton("📮 ASO Resmi", url=f"https://t.me/ASOresmi"),
             ],[
                 InlineKeyboardButton("✨ Kapat", callback_data="cls"),
             ],
