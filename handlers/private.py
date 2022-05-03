@@ -30,7 +30,7 @@ async def start(_, message: Message):
                         "🧩 Menyu" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "ASO Rəsmi 🇹🇷", url=f"https://t.me/ASOresmi"
+                        "ASO Rəsmi 🇦🇿", url=f"https://t.me/ASOresmi"
                     )
                 ]
                 
