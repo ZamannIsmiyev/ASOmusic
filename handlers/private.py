@@ -8,29 +8,29 @@ from helpers.filters import command, other_filters2
 @Client.on_message(command(["start", f"start@{BOT_USERNAME}"]))
 async def start(_, message: Message):
                 await message.reply_photo(
-                "https://te.legra.ph/file/b79c36f7da02a8ed2b11f.jpg",
-                caption=(f"""**Merhaba {message.from_user.mention} 🎵\nBen {bot}!\nSesli sohbetlerde müzik çalabilen botum. Ban yetkisiz, Ses yönetimi yetkisi verip, Asistanı gruba ekleyiniz.\n\nDüzen Tasarım [İmperator Music 🎙️](https://t.me/YarasaMMC).**"""),
+                "https://te.legra.ph/file/ce31f843b674aeb14064a.jpg",
+                caption=(f"""**Salam {message.from_user.mention} 🎵\nBen {bot}!\nSesli sohbetlerde musiqi oxuyan botam. Ban yetkisiz, Sesli yetkisi verib, /gel yazaraq Asistanı gruba atın.\n\nDüzen Tasarım [ASO Music Bot 🎙️](https://t.me/Asomusicbot).**"""),
          reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ Grubuna Ekle ❱ ➕", url=f"https://t.me/İmperatorMusicbot?startgroup=true"
+                        "➕ ❰ Məni Grupa At ❱ ➕", url=f"https://t.me/ASOmusicbot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "👨‍🔧Support", url="https://t.me/BotssSupport"
+                        "👨‍🔧ASO Rəsmi", url="https://t.me/ASOresmit"
                     ),
                     InlineKeyboardButton(
-                        "💬 Sohbet", url="https://t.me/iMPERATORGRUP"
+                        "💬 ASO Paytaxt", url="https://t.me/WerabliAnlar"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🧩 Komutlar" , callback_data= "cbbilgi"
+                        "🧩 Menyu" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "Resmi Kanal 🇹🇷", url=f"https://t.me/YarasaMMC"
+                        "ASO Rəsmi 🇹🇷", url=f"https://t.me/ASOresmi"
                     )
                 ]
                 
@@ -40,23 +40,23 @@ async def start(_, message: Message):
   
 
 
-@Client.on_message(command(["bilgi", f"bilgi@{BOT_USERNAME}"]))
+@Client.on_message(command(["bilgi", f"bilgi@{ASOmusicbot}"]))
 async def bilgi(_, message: Message):
-      await message.reply_text(" ❗ Not:\n Botun aktif çalışması için şu üç yetkiye ihtiyaç vardır:\n- Mesaj silme yetkisi,\n- Bağlantı ile davet etme yetkisi,\n- Sesli sohbeti yönetme yetkisi.", 
+      await message.reply_text(" ❗ Not:\n Botun aktif işləməsi üçün yetkiye ehtiyac vardır:\n- Mesaj silme yetkisi,\n- Bağlantı ile davet etme yetkisi,\n- Sesli sohbeti yönetme yetkisi.", 
       reply_markup=InlineKeyboardMarkup(
              [
                  [
                      InlineKeyboardButton(
-                         "🔴 Herkes için komutlar", callback_data="herkes")
+                         "🔴 Hamı üçün menyu", callback_data="herkes")
                  ],[                     
                      InlineKeyboardButton(
-                         "⚫ Adminler için komutlar", callback_data="admin")
+                         "⚫ Adminler için menyu", callback_data="admin")
                  ],[
                      InlineKeyboardButton(
-                         "Ana menü🏠", callback_data="cbstart")
+                         "Baş Menyu🏠", callback_data="cbstart")
                  ],[
                      InlineKeyboardButton(
-                         "⚙ Geliştirici", url="https://t.me/XTQ_BAKAVOY")
+                         "⚙ Sahibim", url="https://t.me/ismiyev95")
                  ]
              ]
          )
@@ -65,24 +65,24 @@ async def bilgi(_, message: Message):
 
 @Client.on_callback_query(filters.regex("cbbilgi"))
 async def cbbilgi(_, query: CallbackQuery):
-    await query.edit_message_text(" ❗ Not:\nBotun aktif çalışması için şu üç yetkiye ihtiyaç vardır:\n- Mesaj silme yetkisi,\n- Bağlantı ile davet etme yetkisi,\n- Sesli sohbeti yönetme yetkisi.", 
+    await query.edit_message_text(" ❗ Not:\nBotun aktif işləməsi üçün yetkiye ehtiyacı vardır:\n- Mesaj silme yetkisi,\n- Bağlantı ile davet etme yetkisi,\n- Sesli sohbeti yönetme yetkisi.", 
     reply_markup=InlineKeyboardMarkup(
       [
         [
           InlineKeyboardButton(
-            "✨Herkes için Komutlar", callback_data ="herkes")
+            "✨Herkes için Menyu", callback_data ="herkes")
         ],
         [
           InlineKeyboardButton(
-            "👑Yönetici Komutları",callback_data ="admin")
+            "👑Adminlər Menyusu",callback_data ="admin")
         ],
         [
           InlineKeyboardButton(
-            "🏠Ana Menü", callback_data="cbstart")
+            "🏠Baş Səhifə", callback_data="cbstart")
         ],
         [
           InlineKeyboardButton(
-            "⚙ Geliştirici", url="https://t.me/XTQ_BAKAVOY")
+            "⚙ Sahibim", url="https://t.me/ismiyev95")
         ]
       ]
      ))
@@ -90,12 +90,12 @@ async def cbbilgi(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("herkes"))
 async def herkes(_, query: CallbackQuery):
-    await query.edit_message_text(f"""<b>Selam {query.from_user.mention}!\nBu botun herkes için komut menüsü 😉\n\n ▶️ /oynat - şarkı çalmak için youtube url'sine veya şarkı dosyasına yanıt verme\n ▶️ /oynat <song name> - istediğiniz şarkıyı çal\n 🔴 \n 🎵 /bul <song name> - istediğiniz şarkıları hızlı bir şekilde bulun\n 🎵 /vbul istediğiniz videoları hızlı bir şekilde bulun\n 🔍 /ara <query> - youtube'da ayrıntıları içeren videoları arama\n\n</b>""",
+    await query.edit_message_text(f"""<b>Salam {query.from_user.mention}!\nBu botun herkes üçün işləmə menüsü 😉\n\n ▶️ /play - musiqi oxumaq üçün youtube url'sine veya musiqi dosyasına yanıt verme\n ▶️ /play <song name> - istediyiniz musiqini yazın\n 🔴 \n 🎵 /tap <song name> - istediyiniz musiqiləri tez bir zamanda tapın\n 🎵 /vtap istediyiniz videoları tez bir zamanda tapın\n 🔍 /axtar <query> - youtube'da ayrıntıları içeren videoları arama\n\n</b>""",
     reply_markup=InlineKeyboardMarkup(
              [
                  [
                      InlineKeyboardButton(
-                         "⚙ Geliştirici", url="https://t.me/XTQ_BAKAVOY")
+                         "⚙ Sahibim", url="https://t.me/ismiyev95")
                  ],
                  [
                      InlineKeyboardButton(
@@ -108,12 +108,12 @@ async def herkes(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("admin"))
 async def admin(_, query: CallbackQuery):
-    await query.edit_message_text(f"""<b>Selam {query.from_user.mention}!\nBu botun adminler için komut menüsü 🤩\n\n ▶️ /devam - şarkı çalmaya devam et\n ⏸️ /durdur - çalan parçayı duraklatmak için\n 🔄 /atla- Sıraya alınmış müzik parçasını atlatır.\n ⏹ /son - müzik çalmayı durdurma\n 🔼 /ver botun sadece yönetici için kullanılabilir olan komutlarını kullanabilmesi için kullanıcıya yetki ver\n 🔽 /al botun yönetici komutlarını kullanabilen kullanıcının yetkisini al\n\n ⚪ /asistan - Müzik asistanı grubunuza katılır.\n\n</b>""",
+    await query.edit_message_text(f"""<b>Salam {query.from_user.mention}!\nBu botun adminler için işləmə menüsü 🤩\n\n ▶️ /davam - musiqi oxumaqa davam et\n ⏸️ /dayan - oxuyan parçayı dayandırmaq üçün\n 🔄 /kec- Sırada olan müsiqi parçasını dəyişər.\n ⏹ /dur - müsiqi oxumağı durdurma\n 🔼 /ver bot sadeceler yöneticiler üçün işlədə bilər adminler işlədə bilməsi üçün  yetki ver\n 🔽 /al botun yönetici menyusunu işlədə bilen userin yetkisini al\n\n ⚪ /gel - Musiqi asistanı grubunuza qatılır.\n\n</b>""",
     reply_markup=InlineKeyboardMarkup(
              [
                  [
                      InlineKeyboardButton(
-                         "⚙ Geliştirici", url="https://t.me/XTQ_BAKAVOY")
+                         "⚙ Sahibim", url="https://t.me/ismiyev95")
                  ],
                  [
                      InlineKeyboardButton(
@@ -131,23 +131,23 @@ async def cbstart(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ Grubuna Ekle ❱ ➕", url=f"https://t.me/İmperatormusicbot?startgroup=true"
+                        "➕ ❰ Məni Grupa At ❱ ➕", url=f"https://t.me/Asomusicbot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "👨‍🔧 Support", url="https://t.me/BotssSupport"
+                        "👨‍🔧 ASO Rəsmi", url="https://t.me/ASOrəsmi"
                     ),
                     InlineKeyboardButton(
-                        "💬 Sohbet", url="https://t.me/iMPERATORGRUP"
+                        "💬 ASO Paytaxt", url="https://t.me/WerabliAnlar"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌀 Komutlar" , callback_data= "cbbilgi"
+                        "🌀 Menyular" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "Resmi Kanal 🇹🇷", url=f"https://t.me/YarasaMMC"
+                        "ASO Rəsmi 🇦🇿", url=f"https://t.me/AsoRəsmi"
                     )
                 ]
                 
