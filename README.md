@@ -28,7 +28,7 @@
 - `/dur` - müsiqi oxumaqı sonlandırmaq
 - `/reload` - Yönetici listesini günceller
 #### Grubunuza Almak için.. 
-- `/asistan` - Müzik asistanı  grubunuza katılır. 
+- `/gel` - Müzik asistanı  grubunuza katılır. 
 - `/ayril` - Müzik asistanı grubunuzu terk eder. 
 
 - 18 Şubat  Aktif Hələ işləyir. Mükemmel ses.. Akışı.... 
