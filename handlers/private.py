@@ -19,7 +19,7 @@ async def start(_, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "👨‍🔧ASO Rəsmi", url="https://t.me/ASOresmit"
+                        "👨‍🔧ASO Rəsmi", url="https://t.me/ASOresmi"
                     ),
                     InlineKeyboardButton(
                         "💬 ASO Paytaxt", url="https://t.me/WerabliAnlar"
