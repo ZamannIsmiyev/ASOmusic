@@ -8,8 +8,8 @@ from helpers.filters import command, other_filters2
 @Client.on_message(command(["start", f"start@{BOT_USERNAME}"]))
 async def start(_, message: Message):
                 await message.reply_photo(
-                "https://te.legra.ph/file/ce31f843b674aeb14064a.jpg",
-                caption=(f"""**Salam {message.from_user.mention} 🎵\nBen {bot}!\nSesli sohbetlerde musiqi oxuyan botam. Ban yetkisiz, Sesli yetkisi verib, /gel yazaraq Asistanı gruba atın.\n\nDüzen Tasarım [ASO Music Bot 🎙️](https://t.me/Asomusicbot).**"""),
+                "https://i.ibb.co/khRz42f/Turkish-Voice.jpg" ,
+                caption=(f"""**Salam {message.from_user.mention} 🎵\nBen {bot}!\nSesli sohbetlerde musiqi oxuyan botam. Ban yetkisiz, Sesli yetkisi verib, /gel yazaraq Asistanı gruba atın.\n\nDüzen Tasarım [ASO Music Bot Sahibi 🎙️](https://t.me/ismiyev95).**"""),
          reply_markup=InlineKeyboardMarkup(
             [
                 [
