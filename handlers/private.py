@@ -22,7 +22,7 @@ async def start(_, message: Message):
                         "👨‍🔧ASO Rəsmi", url="https://t.me/ASOresmi"
                     ),
                     InlineKeyboardButton(
-                        "💬 ASO Paytaxt", url="https://t.me/WerabliAnlar"
+                        "💬 ASO Paytaxt", url="https://t.me/ASOSonZirve"
                     )
                 ],
                 [
@@ -139,7 +139,7 @@ async def cbstart(_, query: CallbackQuery):
                         "👨‍🔧 ASO Rəsmi", url="https://t.me/ASOrəsmi"
                     ),
                     InlineKeyboardButton(
-                        "💬 ASO Paytaxt", url="https://t.me/WerabliAnlar"
+                        "💬 ASO Paytaxt", url="https://t.me/ASOSonZirve"
                     )
                 ],
                 [
