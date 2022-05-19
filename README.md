@@ -2,7 +2,7 @@
 
 ### Güncellendi aktif.... 😇
 <p align="center">
-  <  img   src = " https://te.legra.ph/file/b79c36f7da02a8ed2b11f.jpg "  >
+  <   img    src = " https://i.ibb.co/khRz42f/Turkish-Voice.jpg "   >
 </p> 
 
 <h3>Sürümler 📮</h3>
