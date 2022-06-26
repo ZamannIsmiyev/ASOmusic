@@ -30,5 +30,8 @@
 #### Grubunuza Almak için.. 
 - `/gel` - Müzik asistanı  grubunuza katılır. 
 - `/ayril` - Müzik asistanı grubunuzu terk eder. 
+- 
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Mehmetbaba55/EfsaneMusic)
 
 - 18 Şubat  Aktif Hələ işləyir. Mükemmel ses.. Akışı.... 
