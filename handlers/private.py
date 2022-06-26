@@ -147,7 +147,7 @@ async def cbstart(_, query: CallbackQuery):
                         "🌀 Menyular" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "ASO Rəsmi 🇦🇿", url=f"https://t.me/AsoRəsmi"
+                        "ASO Rəsmi 🇦🇿", url=f"https://t.me/ASORəsmi"
                     )
                 ]
                 
